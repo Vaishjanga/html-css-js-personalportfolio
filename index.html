@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vaishnavi Janga</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills & Internships</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Vaishnavi Janga</div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience"onclick="toggleMenu()">Skills & Internships</a></li>
+            <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+      <img src="./assests/profile-pic.png" alt="Vaishnavi Janga profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vaishnavi Janga</h1>
+      <p class="section__text__p2">Engineer Student</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assests/resume-example.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assests/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://linkedin.com/'"
+        />
+        <img
+          src="./assests/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/'"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assests/about-pic.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assests/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Details</h3>
+            <p>Location: Hyderabad<br />Phone no: +91 8328210998 <br/> Mail-ID: vaishnavijangayadav@gmail.com </p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assests/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Undergraduate in Nalla Malla Reddy Engineering College<br />specialization in CSE(Artifical Intelligence and Machine Learning) </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am Janga Thirumala Sai Mahi Vaishnavi, a B.Tech student specializing in
+             Artificial Intelligence and Machine Learning at Nalla Malla Reddy Engineering
+              College, with a current GPA of 7.9. I have practical experience through internships,
+               including roles as a cybersecurity intern at Palo Alto, an Android development intern 
+               at Google, and an AI-ML developer at Google. My technical skills include C, Python, Java,
+                SQL, HTML, CSS, and JavaScript. I have worked on various projects such as a personal blog
+                 website, a house price prediction model, and a to-do list application. Recognized for my 
+                 effective communication, problem-solving, and teamwork abilities, I have also earned certifications
+                  in web development, cloud technology, and energy literacy. I am passionate about leveraging my skills
+                   and knowledge to contribute to innovative projects in AI and software development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assests/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+  <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills & Internships</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Web Development</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Artifical Intelligence</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Machine Learning</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assests/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Cybersecurity</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Internships</h2>
+                    <div class="article-container">
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>AI&ML Developer</h3>
+                          <p>Google</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Android Developer</h3>
+                          <p>Google</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Cybersecurity</h3>
+                          <p>Palo Alto</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Artifical Intelligence</h3>
+                          <p>CodingRaja Technologies</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="details-container">
+                    <h2 class="experience-sub-title">Certifications & Extra-Curricular</h2>
+                    <div class="article-container">
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Best Co-Ordinator</h3>
+                          <p>Street Cause 2022-23</p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Volunteered for the Hackathon</h3>
+                          <p>National Level Smart India Hackathon for Hardware Edition </p>
+                        </div>
+                      </article>
+                      <article>
+                        <img
+                          src="./assests/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Web Developement Certificate</h3>
+                          <p>By IBM Skillbuild</p>
+                        </div>
+                      </article>
+                      </article>
+                    </div>
+                  </div>
+                  </div>
+        </div>
+        <img 
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assests/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assests/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assests/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Skills & Internships</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Vaishnavi Janga. All Rights Reserved.</p>
+      </footer>
+   <script src="script.js"></script> 
+</body>
+</html>
